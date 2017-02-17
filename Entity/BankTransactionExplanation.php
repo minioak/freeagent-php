@@ -19,7 +19,7 @@ class BankTransactionExplanation extends AbstractEntity
 
     /**
      * @var string
-     * @Group({"get", "update"})
+     * @Groups({"get", "update"})
      * @Type("string")
      */
     protected $url;
@@ -27,7 +27,7 @@ class BankTransactionExplanation extends AbstractEntity
     /**
      * @var string
      * @Accessor(getter="getBankTransactionUrl", setter="setBankTransactionUrl")
-     * @Group({"get", "post", "update"})
+     * @Groups({"get", "post", "update"})
      * @Type("string")
      */
     protected $bankTransaction;
@@ -40,7 +40,7 @@ class BankTransactionExplanation extends AbstractEntity
     /**
      * @var string
      * @Accessor(getter="getBankAccountUrl", setter="setBankAccountUrl")
-     * @Group({"get", "post", "update"})
+     * @Groups({"get", "post", "update"})
      * @Type("string")
      */
     protected $bankAccount;
@@ -53,7 +53,7 @@ class BankTransactionExplanation extends AbstractEntity
     /**
      * @var string
      * @Accessor(getter="getCategoryUrl", setter="setCategoryUrl")
-     * @Group({"get", "post", "update"})
+     * @Groups({"get", "post", "update"})
      * @Type("string")
      */
     protected $category;
@@ -65,21 +65,21 @@ class BankTransactionExplanation extends AbstractEntity
 
     /**
      * @var \DateTime
-     * @Group({"get", "post", "update"})
+     * @Groups({"get", "post", "update"})
      * @Type("DateTime<'Y-m-d'>")
      */
     protected $datedOn;
 
     /**
      * @var string
-     * @Group({"get", "post", "update"})
+     * @Groups({"get", "post", "update"})
      * @Type("string")
      */
     protected $description;
 
     /**
      * @var float
-     * @Group({"get", "post", "update"})
+     * @Groups({"get", "post", "update"})
      * @Type("double")
      */
     protected $grossValue;
@@ -87,7 +87,7 @@ class BankTransactionExplanation extends AbstractEntity
     /**
      * @var string
      * @Accessor(getter="getProjectUrl", setter="setProjectUrl")
-     * @Group({"get", "post", "update"})
+     * @Groups({"get", "post", "update"})
      * @Type("string")
      */
     protected $project;
@@ -99,35 +99,35 @@ class BankTransactionExplanation extends AbstractEntity
 
     /**
      * @var string
-     * @Group({"get", "post", "update"})
+     * @Groups({"get", "post", "update"})
      * @Type("string")
      */
     protected $rebillType;
 
     /**
      * @var float
-     * @Group({"get", "post", "update"})
+     * @Groups({"get", "post", "update"})
      * @Type("double")
      */
     protected $rebillFactor;
 
     /**
      * @var Attachment
-     * @Group({"get", "post", "update"})
+     * @Groups({"get", "post", "update"})
      * @Type("SixBySix\Freeagent\Entity\Attachment")
      */
     protected $attachment;
 
     /**
      * @var float
-     * @Group({"get", "post", "update"})
+     * @Groups({"get", "post", "update"})
      * @Type("double")
      */
     protected $manualSalesTaxAmount;
 
     /**
      * @var float
-     * @Group({"get", "post", "update"})
+     * @Groups({"get", "post", "update"})
      * @Type("double")
      */
     protected $foreignCurrencyValue;
@@ -135,7 +135,7 @@ class BankTransactionExplanation extends AbstractEntity
     /**
      * @var string
      * @Accessor(getter="getPaidInvoiceUrl", setter="setPaidInvoiceUrl")
-     * @Group({"get", "post", "update"})
+     * @Groups({"get", "post", "update"})
      * @Type("string")
      */
     protected $paidInvoice;
@@ -148,7 +148,7 @@ class BankTransactionExplanation extends AbstractEntity
     /**
      * @var string
      * @Accessor(getter="getPaidBillUrl", setter="setPaidBillUrl")
-     * @Group({"get", "post", "update"})
+     * @Groups({"get", "post", "update"})
      * @Type("string")
      */
     protected $paidBill;
@@ -161,7 +161,7 @@ class BankTransactionExplanation extends AbstractEntity
     /**
      * @var string
      * @Accessor(getter="getPaidUserUrl", setter="setPaidUserUrl")
-     * @Group({"get", "post", "update"})
+     * @Groups({"get", "post", "update"})
      * @Type("string")
      */
     protected $paidUser;
@@ -174,7 +174,7 @@ class BankTransactionExplanation extends AbstractEntity
     /**
      * @var string
      * @Accessor(getter="getTransferBankAccountUrl", setter="setTransferBankAccountUrl")
-     * @Group({"get", "post", "update"})
+     * @Groups({"get", "post", "update"})
      * @Type("string")
      */
     protected $transferBankAccount;
@@ -187,7 +187,7 @@ class BankTransactionExplanation extends AbstractEntity
     /**
      * @var string
      * @Accessor(getter="getStockItemUrl", setter="setStockItemUrl")
-     * @Group({"get", "post", "update"})
+     * @Groups({"get", "post", "update"})
      * @Type("string")
      */
     protected $stockItem;
@@ -199,23 +199,20 @@ class BankTransactionExplanation extends AbstractEntity
 
     /**
      * @var integer
-     * @Group({"get", "post", "update"})
+     * @Groups({"get", "post", "update"})
      * @Type("integer")
      */
     protected $stockAlteringQuantity;
 
     /**
      * @var integer
-     * @Group({"get", "post", "update"})
+     * @Groups({"get", "post", "update"})
      * @Type("integer")
      */
     protected $assetLifeYears;
 
     /**
      * @var string
-     * @Accessor(getter="getDisposedAssetUrl", setter="setDisposedAssetUrl")
-     * @Group({"get", "post", "update"})
-     * @Type("string")
      */
     protected $disposedAsset;
 
@@ -226,14 +223,14 @@ class BankTransactionExplanation extends AbstractEntity
 
     /**
      * @var string
-     * @Group({"get", "post", "update"})
+     * @Groups({"get", "post", "update"})
      * @Type("string")
      */
     protected $ecStatus;
 
     /**
      * @var string
-     * @Group({"get", "post", "update"})
+     * @Groups({"get", "post", "update"})
      * @Type("string")
      */
     protected $placeOfSupply;

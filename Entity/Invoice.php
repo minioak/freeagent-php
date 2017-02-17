@@ -706,6 +706,24 @@ class Invoice extends AbstractEntity
     }
 
     /**
+     * @return string
+     */
+    public function getPlaceOfSupply()
+    {
+        return $this->placeOfSupply;
+    }
+
+    /**
+     * @param $placeOfSupply
+     * @return $this
+     */
+    public function setPlaceOfSupply($placeOfSupply)
+    {
+        $this->placeOfSupply = $placeOfSupply;
+        return $this;
+    }
+
+    /**
      * @return \DateTime
      */
     public function getCreatedAt()
