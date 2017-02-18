@@ -246,7 +246,7 @@ class Invoice extends AbstractEntity
     /**
      * @var float
      * @Groups({"get","update","post"})
-     * @Type("DateTime<'Y-m-d\TH:i:sO'>")
+     * @Type("double")
      */
     protected $salesTaxValue;
 
