@@ -244,7 +244,7 @@ class Invoice extends AbstractEntity
     protected $writtenOffDate;
 
     /**
-     * @var \DateTime
+     * @var float
      * @Groups({"get","update","post"})
      * @Type("DateTime<'Y-m-d\TH:i:sO'>")
      */
@@ -721,7 +721,7 @@ class Invoice extends AbstractEntity
     }
 
     /**
-     * @param $salesTaxValue
+     * @param float $salesTaxValue
      * @return $this
      */
     public function setSalesTaxValue($salesTaxValue)
@@ -731,7 +731,7 @@ class Invoice extends AbstractEntity
     }
 
     /**
-     * @return string
+     * @return float
      */
     public function getSalesTaxValue()
     {
