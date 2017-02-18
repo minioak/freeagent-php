@@ -243,6 +243,13 @@ class Invoice extends AbstractEntity
      */
     protected $writtenOffDate;
 
+    /**
+     * @var \DateTime
+     * @Groups({"get","update","post"})
+     * @Type("DateTime<'Y-m-d\TH:i:sO'>")
+     */
+    protected $salesTaxValue;
+
 
     public function __construct()
     {
@@ -711,6 +718,24 @@ class Invoice extends AbstractEntity
     public function getPlaceOfSupply()
     {
         return $this->placeOfSupply;
+    }
+
+    /**
+     * @param $salesTaxValue
+     * @return $this
+     */
+    public function setSalesTaxValue($salesTaxValue)
+    {
+        $this->salesTaxValue = $salesTaxValue;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSalesTaxValue()
+    {
+        return $this->salesTaxValue;
     }
 
     /**
