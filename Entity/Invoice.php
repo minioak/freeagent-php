@@ -83,6 +83,13 @@ class Invoice extends AbstractEntity
      * @Type("DateTime<'Y-m-d'>")
      */
     protected $dueOn;
+    
+    /**
+     * @var float
+     * @Groups({"get", "update", "post"})
+     * @Type("double")
+     */
+    protected $discountPercent;
 
     /**
      * @var string
@@ -280,6 +287,24 @@ class Invoice extends AbstractEntity
     public function setContactUrl($contact)
     {
         $this->contact = $contact;
+        return $this;
+    }
+    
+    /**
+     * @return float
+     */
+    public function getDiscountPercent()
+    {
+        return $this->discountPercent;
+    }
+
+    /**
+     * @param float $discountPercent
+     * @return $this
+     */
+    public function setDiscountPercent($discountPercent)
+    {
+        $this->discountPercent = $discountPercent;
         return $this;
     }
 
